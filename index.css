@@ -1,0 +1,196 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+#TodoApp{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(110, 145, 185);
+    height: 20vh;
+}
+
+#appName{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+#inputBox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+#input{
+    width: 60vw;
+    padding: 1vh;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    box-shadow: none;
+}
+
+#submit{
+    position: relative;
+    background-color: rgb(55, 227, 227);
+    color: black;
+    font-size: 20px;
+    width: 8vw;
+    right: 0.1vw;
+    outline: none;
+    border: none;
+    border-radius:0px 4px 4px 0px;
+    box-shadow: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color:  rgb(55, 227, 227);
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    list-style-type: none;
+    background-color: rgb(222, 240, 251);
+    padding: 2vh;
+    font-size: 20px;
+    color: rgb(45, 42, 42);
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+
+ul li:nth-child(odd){
+    background-color: #a1e8ec;
+}
+
+ul li:hover{
+    background-color: rgb(282 235, 241);
+}
+li .text{
+    margin-left: auto;
+}
+
+li .editInput{
+    margin-left: auto;
+    width: 90vw;
+    background-color: transparent;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    color: rgb(80, 73, 73);
+}
+
+li .actions{
+    position: relative;
+    margin-left: auto;
+    right: 2vw;
+}
+.actions .editBtn{
+    padding: 0.5vh 1vw;
+    font-size: 16px;
+    /* margin-right: 2vw; */
+    background-color: rgb(47, 60, 81);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+ul li.selected{
+    background-color: rgb(180, 192, 155);
+    border-bottom: 1px solid lightcyan;
+    /* color: #fff; */
+}
+/* .actions .editBtn:hover{
+    background-color: rgb(27, 64, 122);
+} */
+
+.saveBtn{
+    background-color: rgb(71, 156, 41);
+    padding: 0.5vh 0.7vw;
+    font-size: 16px;
+    /* margin-right: 2vw; */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.actions button:hover{
+    opacity: 0.7;
+}
+
+#deleteAll, #deleteSelected{
+    color: #fff;
+    width: 150px;
+    margin-top: 2vh;
+    padding: 10px 0px;
+    font-size: 16px;
+    background-color: rgb(245, 102, 102);
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#deleteAll:hover{
+    background-color: rgb(234, 40, 40);
+    font-size: 18px;
+}
+
+.deletetBtn{
+    background-color: rgb(236, 33, 57);
+    padding: 0.5vh 0.7vw;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.deletetBtn:hover{
+    opacity: 1;
+}
+
+.pintBtn{
+    background-color: rgb(215, 43, 192);
+    padding: 0.5vh 0.7vw;
+    font-size: 16px;
+    margin-right: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.4s;
+}
+.pintBtn:hover{
+    opacity: 1;
+}

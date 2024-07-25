@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body onload="">
+    <div id="TodoApp">
+      <div id="header">
+        <div id="appName">Todo App</div>
+        <div id="inputBox">
+          <input
+            id="input"
+            type="text"
+            placeholder="Enter your task here"
+            onkeydown="onKeyPress(event)"
+          />
+          <input id="submit" type="submit" value="Add" onclick="addTask()" />
+        </div>
+      </div>
+      <div id="content">
+        <ul id="List"></ul>
+        <button id="deleteAll" onclick="deleteAll()" style="display: none">Delete All</button>
+        <button id="deleteSelected" onclick="deleteSelected()" style="display: none">Delete Selected</button>
+      </div>
+    </div>
+  </body>
+</html>
